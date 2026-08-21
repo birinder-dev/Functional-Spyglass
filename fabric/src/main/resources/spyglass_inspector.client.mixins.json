@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "dev.birinder.spyglass.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"GameRendererMixin",
+		"MinecraftClientMixin",
+		"EntityMixin",
+		"EntityRendererMixin",
+		"MouseMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

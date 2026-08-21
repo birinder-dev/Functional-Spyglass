@@ -1,0 +1,34 @@
+plugins {
+    id 'net.neoforged.moddev' version '1.0.14'
+}
+
+version = project.mod_version
+group = 'dev.birinder.spyglass'
+base.archivesName = 'insight_glass-neoforge'
+
+neoForge {
+    version = project.neoforge_version
+
+    runs {
+        client {
+            client()
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}

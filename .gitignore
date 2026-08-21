@@ -1,0 +1,29 @@
+# Gradle & Build Artifacts
+.gradle/
+build/
+out/
+classes/
+*.jar
+
+# IDE & Editor Configs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# OS Files
+*.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+
+# Runtime & Logs
+run/
+logs/
+*.log

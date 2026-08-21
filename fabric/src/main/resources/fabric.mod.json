@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "insight_glass",
+	"version": "${version}",
+	"name": "Insight Glass",
+	"icon": "assets/insight_glass/icon.png",
+	"description": "Look through your spyglass to instantly inspect live 3D face portraits, exact HP, armor reduction, potion effects, and stats for any creature, mob, animal, or player! Features 3-step scroll zoom and color-coded threat outlines on any server.",
+	"authors": [
+		"Birinder"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.birinder.spyglass.SpyglassInspectorClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "spyglass_inspector.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": ">=1.17",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

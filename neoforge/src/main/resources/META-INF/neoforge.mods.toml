@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+issueTrackerURL="https://github.com/birinder-dev/Ancient-Craft/issues"
+license="MIT"
+
+[[mods]]
+modId="insight_glass"
+version="1.0.0"
+displayName="Insight Glass"
+logoFile="assets/insight_glass/icon.png"
+authors="Birinder"
+description="""Look through your spyglass to instantly inspect live 3D face portraits, exact HP, armor reduction, potion effects, and stats for any creature, mob, animal, or player! Features 3-step scroll zoom and color-coded threat outlines on any server."""
+
+[[mixins]]
+config="spyglass_inspector.mixins.json"
+
+[[dependencies.insight_glass]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.0.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.insight_glass]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21,)"
+    ordering="NONE"
+    side="BOTH"
