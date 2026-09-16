@@ -16,14 +16,14 @@ config="insight_glass.mixins.json"
 
 [[dependencies.insight_glass]]
     modId="forge"
-    type="required"
-    versionRange="[36.0.0,)"
+    mandatory=true
+    versionRange="[47.0.0,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.insight_glass]]
     modId="minecraft"
-    type="required"
-    versionRange="[1.17,1.20.5)"
+    mandatory=true
+    versionRange="[1.20.1,1.20.5)"
     ordering="NONE"
     side="BOTH"
